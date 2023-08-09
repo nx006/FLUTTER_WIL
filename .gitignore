@@ -25,3 +25,19 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+
+# macOS
+*.DS_Store
+
+# .g.dart files and freezed files
+*.g.dart
+*.freezed.dart
+
+# vscode
+.vscode/
+
+# Android studio
+.idea/
+*.iml
+*.iws
+*.ipr
