@@ -1,3 +1,4 @@
+import 'package:b612_flutter_presentation/const/colors.dart';
 import 'package:flutter/material.dart';
 
 class DefaultLayout extends StatelessWidget {
@@ -19,7 +20,7 @@ class DefaultLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backgroundColor ?? Colors.white,
+      backgroundColor: backgroundColor ?? kBackgroundColor,
       appBar: renderAppBar(),
       body: child,
       bottomNavigationBar: bottomNavigationBar,
