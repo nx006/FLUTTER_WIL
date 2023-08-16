@@ -1,12 +1,14 @@
-import 'package:b612_flutter_presentation/const/colors.dart';
 import 'package:flutter/material.dart';
+
+import 'package:b612_flutter_presentation/const/colors.dart';
 
 class DefaultLayout extends StatelessWidget {
   final Widget child;
   final Color? backgroundColor;
   final String? title;
   final Widget? bottomNavigationBar;
-  final Widget? floatingActionButton;
+  final Widget? nextPageFloatingActionButton;
+  final Widget? prevPageFloatingActionButton;
 
   const DefaultLayout({
     Key? key,
@@ -14,7 +16,8 @@ class DefaultLayout extends StatelessWidget {
     this.backgroundColor,
     this.title,
     this.bottomNavigationBar,
-    this.floatingActionButton,
+    this.nextPageFloatingActionButton,
+    this.prevPageFloatingActionButton,
   }) : super(key: key);
 
   @override
@@ -22,9 +25,23 @@ class DefaultLayout extends StatelessWidget {
     return Scaffold(
       backgroundColor: backgroundColor ?? kBackgroundColor,
       appBar: renderAppBar(),
-      body: child,
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Stack(children: [
+          child,
+          if (prevPageFloatingActionButton != null)
+            Align(
+              alignment: Alignment.bottomLeft,
+              child: prevPageFloatingActionButton!,
+            ),
+          if (nextPageFloatingActionButton != null)
+            Align(
+              alignment: Alignment.bottomRight,
+              child: nextPageFloatingActionButton!,
+            ),
+        ]),
+      ),
       bottomNavigationBar: bottomNavigationBar,
-      floatingActionButton: floatingActionButton,
     );
   }
 
