@@ -34,7 +34,7 @@ class DartLangPage extends StatelessWidget {
                 title: '모든 것이 객체로 이루어져 있다',
                 text: 'Dart 언어는 모든 것이 객체로 이루어져 있습니다.\n\n'
                     '심지어 int, double, bool 등의 Primitive Type 역시 객체로 이루어져 있습니다.\n'
-                    '따라서 Primitive 타입을 사용할 때에도 미리 정의된 메소드를 이용하거나, 혹은 필요할 경우 이를 상속받아서 사용할 수도 있습니다.\n\n'
+                    '따라서 Primitive 타입을 사용할 때에도 미리 정의된 메소드를 바로 이용할 수 있습니다.\n\n'
                     'Dart에서 객체가 아닌 것은 단 하나, null 뿐입니다.',
               ),
               Column(
