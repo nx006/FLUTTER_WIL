@@ -29,22 +29,28 @@ class ExplainMePage extends StatelessWidget {
                   width: 400,
                 ),
                 // const SizedBox(width: 20),
-                const Column(
+                Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       '이준선',
                       style: titleTextStyle,
                     ),
-                    SizedBox(height: 20),
-                    Text(
+                    const SizedBox(height: 20),
+                    const Text(
                       'Github: https://github.com/nx006\n'
                       'Blog: https://nx006.tistory.com/\n'
-                      'B612 Mobile session\n\n'
-                      '칵테일 좋아합니다',
+                      'B612 Mobile session',
                       style: bodyTextStyle,
                     ),
+                    const SizedBox(height: 20),
+                    Text(
+                      '칵테일 좋아합니다',
+                      style: bodyTextStyle.copyWith(
+                        fontStyle: FontStyle.italic,
+                      ),
+                    )
                   ],
                 ),
               ],

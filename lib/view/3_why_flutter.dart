@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:b612_flutter_presentation/const/colors.dart';
 import 'package:b612_flutter_presentation/view/4_flutter_structure.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -39,12 +40,13 @@ class WhyFlutterPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  /// 제목
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
                         'assets/flutter/icon_flutter/icon_flutter.png',
-                        width: 100,
+                        width: 70,
                       ),
                       const SizedBox(width: 20),
                       const Column(
@@ -160,7 +162,7 @@ class _Content extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: kInputBackgroundColor,
       width: MediaQuery.of(context).size.width * 0.4,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8.0),
