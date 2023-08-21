@@ -1,3 +1,4 @@
+import 'package:b612_flutter_presentation/view/3_why_flutter.dart';
 import 'package:b612_flutter_presentation/view/explain_me_page.dart';
 import 'package:b612_flutter_presentation/view/homepage.dart';
 import 'package:go_router/go_router.dart';
@@ -21,5 +22,10 @@ List<GoRoute> _routes = [
     path: '/introduce',
     name: ExplainMePage.routeName,
     builder: (_, __) => const ExplainMePage(),
+  ),
+  GoRoute(
+    path: '/why_flutter',
+    name: WhyFlutterPage.routeName,
+    builder: (context, state) => const WhyFlutterPage(),
   ),
 ];
