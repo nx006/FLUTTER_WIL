@@ -3,7 +3,6 @@ import 'package:b612_flutter_presentation/const/font_styles.dart';
 import 'package:b612_flutter_presentation/layout/default_layout.dart';
 import 'package:b612_flutter_presentation/view/explain_me_page.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class HomePage extends StatelessWidget {
   static String routeName = 'homePage';
@@ -14,10 +13,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultLayout(
       nextPageFloatingActionButton: NextPageFloatingButton(
-        routeName: routeName,
-        onPressed: () {
-          context.goNamed(ExplainMePage.routeName);
-        },
+        routeName: ExplainMePage.routeName,
       ),
       child: Center(
         child: Column(

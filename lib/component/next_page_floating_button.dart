@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 class NextPageFloatingButton extends StatelessWidget {
   final Color? backgroundColor;
   final String routeName;
-  final VoidCallback? onPressed;
 
   /// gorouter 이름
 
@@ -13,7 +12,6 @@ class NextPageFloatingButton extends StatelessWidget {
     Key? key,
     this.backgroundColor,
     required this.routeName,
-    this.onPressed,
   }) : super(key: key);
 
   @override
@@ -22,7 +20,6 @@ class NextPageFloatingButton extends StatelessWidget {
       routeName: routeName,
       icon: Icons.arrow_forward_ios,
       backgroundColor: backgroundColor,
-      onPressed: onPressed,
     );
   }
 }
