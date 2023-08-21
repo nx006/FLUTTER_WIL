@@ -1,6 +1,5 @@
 import 'package:b612_flutter_presentation/component/custom_text_field_widget.dart';
 import 'package:b612_flutter_presentation/component/prev_page_floating_button.dart';
-import 'package:b612_flutter_presentation/const/colors.dart';
 import 'package:b612_flutter_presentation/layout/title_body_layout.dart';
 import 'package:b612_flutter_presentation/view/5_flutter_engine.dart';
 import 'package:flutter/material.dart';

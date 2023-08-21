@@ -54,7 +54,7 @@ class WhyFlutterPage extends StatelessWidget {
                         children: [
                           Text(
                             'Why Flutter?',
-                            style: titleTextStyle,
+                            style: bigTitleTextStyle,
                           ),
                           Text(
                             '왜 Flutter인가',
