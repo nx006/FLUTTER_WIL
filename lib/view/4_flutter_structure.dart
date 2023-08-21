@@ -1,10 +1,9 @@
 import 'package:b612_flutter_presentation/component/custom_text_field_widget.dart';
 import 'package:b612_flutter_presentation/component/next_page_floating_button.dart';
 import 'package:b612_flutter_presentation/component/prev_page_floating_button.dart';
-import 'package:b612_flutter_presentation/const/font_styles.dart';
-import 'package:b612_flutter_presentation/layout/default_layout.dart';
+import 'package:b612_flutter_presentation/layout/title_body_layout.dart';
 import 'package:b612_flutter_presentation/view/3_why_flutter.dart';
-import 'package:b612_flutter_presentation/view/homepage.dart';
+import 'package:b612_flutter_presentation/view/5_flutter_engine.dart';
 import 'package:flutter/material.dart';
 
 class FlutterStructurePage extends StatelessWidget {
@@ -14,31 +13,17 @@ class FlutterStructurePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultLayout(
+    return TitleBodyLayout(
+      title: 'Flutter Structure',
+      subTitle: 'Flutter의 구조 알아보기',
       prevPageFloatingActionButton:
           PrevPageFloatingButton(routeName: WhyFlutterPage.routeName),
       nextPageFloatingActionButton:
-          NextPageFloatingButton(routeName: HomePage.routeName),
+          NextPageFloatingButton(routeName: FlutterEnginePage.routeName),
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            /// 제목
-            const Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text(
-                  'Flutter Structure',
-                  style: titleTextStyle,
-                ),
-                Text(
-                  'Flutter의 구조 알아보기',
-                  style: bodyTextStyle,
-                )
-              ],
-            ),
-            const SizedBox(height: 20),
-
             /// Contents
             IntrinsicHeight(
               child: Row(
