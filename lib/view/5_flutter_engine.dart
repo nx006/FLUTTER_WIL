@@ -1,11 +1,9 @@
 import 'package:b612_flutter_presentation/component/next_page_floating_button.dart';
 import 'package:b612_flutter_presentation/component/prev_page_floating_button.dart';
 import 'package:b612_flutter_presentation/const/font_styles.dart';
-import 'package:b612_flutter_presentation/layout/default_layout.dart';
 import 'package:b612_flutter_presentation/layout/title_body_layout.dart';
 import 'package:b612_flutter_presentation/view/4_flutter_structure.dart';
 import 'package:b612_flutter_presentation/view/6_dart_lang_page.dart';
-import 'package:b612_flutter_presentation/view/homepage.dart';
 import 'package:flutter/material.dart';
 
 class FlutterEnginePage extends StatelessWidget {
