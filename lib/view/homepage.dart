@@ -1,7 +1,9 @@
 import 'package:b612_flutter_presentation/component/next_page_floating_button.dart';
 import 'package:b612_flutter_presentation/const/font_styles.dart';
 import 'package:b612_flutter_presentation/layout/default_layout.dart';
+import 'package:b612_flutter_presentation/view/explain_me_page.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class HomePage extends StatelessWidget {
   static String routeName = 'homePage';
@@ -11,9 +13,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultLayout(
-      floatingActionButton: NextPageFloatingButton(
+      nextPageFloatingActionButton: NextPageFloatingButton(
         routeName: routeName,
-        onPressed: () {},
+        onPressed: () {
+          context.goNamed(ExplainMePage.routeName);
+        },
       ),
       child: Center(
         child: Column(

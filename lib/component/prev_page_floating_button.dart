@@ -1,7 +1,6 @@
 import 'package:b612_flutter_presentation/component/custom_floating_action_button.dart';
 import 'package:b612_flutter_presentation/const/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class PrevPageFloatingButton extends StatelessWidget {
   final String routeName;
