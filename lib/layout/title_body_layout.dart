@@ -44,13 +44,17 @@ class TitleBodyLayout extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        if (image != null) image!,
+        if (image != null)
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: image!,
+          ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
               title,
-              style: titleTextStyle,
+              style: bigTitleTextStyle,
             ),
             if (subTitle != null)
               Text(

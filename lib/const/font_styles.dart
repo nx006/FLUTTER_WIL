@@ -8,9 +8,16 @@ const bodyTextStyle = TextStyle(
   color: kBodyTextColor,
 );
 
+/// h1 텍스트 스타일
+const bigTitleTextStyle = TextStyle(
+  fontSize: 34.0,
+  fontWeight: FontWeight.w700,
+  color: kBodyTextColor,
+);
+
 /// 제목 텍스트 스타일
 const titleTextStyle = TextStyle(
-  fontSize: 32.0,
+  fontSize: 24.0,
   fontWeight: FontWeight.w700,
   color: kBodyTextColor,
 );
