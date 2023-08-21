@@ -2,6 +2,7 @@ import 'package:b612_flutter_presentation/view/3_why_flutter.dart';
 import 'package:b612_flutter_presentation/view/4_flutter_structure.dart';
 import 'package:b612_flutter_presentation/view/5_flutter_engine.dart';
 import 'package:b612_flutter_presentation/view/6_dart_lang_page.dart';
+import 'package:b612_flutter_presentation/view/cross_platform_page.dart';
 import 'package:b612_flutter_presentation/view/explain_me_page.dart';
 import 'package:b612_flutter_presentation/view/homepage.dart';
 import 'package:go_router/go_router.dart';
@@ -30,6 +31,11 @@ List<GoRoute> _routes = [
     path: '/why_flutter',
     name: WhyFlutterPage.routeName,
     builder: (context, state) => const WhyFlutterPage(),
+  ),
+  GoRoute(
+    path: '/cross_platform',
+    name: CrossPlatformPage.routeName,
+    builder: (context, state) => const CrossPlatformPage(),
   ),
   GoRoute(
     path: '/flutter_structure',

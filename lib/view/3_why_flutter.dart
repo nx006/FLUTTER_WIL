@@ -1,13 +1,13 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:b612_flutter_presentation/const/colors.dart';
-import 'package:b612_flutter_presentation/view/4_flutter_structure.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import 'package:b612_flutter_presentation/component/next_page_floating_button.dart';
 import 'package:b612_flutter_presentation/component/prev_page_floating_button.dart';
+import 'package:b612_flutter_presentation/const/colors.dart';
 import 'package:b612_flutter_presentation/const/font_styles.dart';
 import 'package:b612_flutter_presentation/layout/default_layout.dart';
+import 'package:b612_flutter_presentation/view/cross_platform_page.dart';
 import 'package:b612_flutter_presentation/view/explain_me_page.dart';
 
 class WhyFlutterPage extends StatelessWidget {
@@ -23,7 +23,7 @@ class WhyFlutterPage extends StatelessWidget {
       prevPageFloatingActionButton:
           PrevPageFloatingButton(routeName: ExplainMePage.routeName),
       nextPageFloatingActionButton:
-          NextPageFloatingButton(routeName: FlutterStructurePage.routeName),
+          NextPageFloatingButton(routeName: CrossPlatformPage.routeName),
       child: Center(
         child: Expanded(
           child: Listener(

@@ -4,6 +4,7 @@ import 'package:b612_flutter_presentation/component/prev_page_floating_button.da
 import 'package:b612_flutter_presentation/layout/title_body_layout.dart';
 import 'package:b612_flutter_presentation/view/3_why_flutter.dart';
 import 'package:b612_flutter_presentation/view/5_flutter_engine.dart';
+import 'package:b612_flutter_presentation/view/cross_platform_page.dart';
 import 'package:flutter/material.dart';
 
 class FlutterStructurePage extends StatelessWidget {
@@ -16,10 +17,12 @@ class FlutterStructurePage extends StatelessWidget {
     return TitleBodyLayout(
       title: 'Flutter Structure',
       subTitle: 'Flutter의 구조 알아보기',
-      prevPageFloatingActionButton:
-          PrevPageFloatingButton(routeName: WhyFlutterPage.routeName),
-      nextPageFloatingActionButton:
-          NextPageFloatingButton(routeName: FlutterEnginePage.routeName),
+      prevPageFloatingActionButton: PrevPageFloatingButton(
+        routeName: CrossPlatformPage.routeName,
+      ),
+      nextPageFloatingActionButton: NextPageFloatingButton(
+        routeName: FlutterEnginePage.routeName,
+      ),
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
