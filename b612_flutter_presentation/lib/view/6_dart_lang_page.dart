@@ -31,7 +31,7 @@ class DartLangPage extends StatelessWidget {
             children: [
               CustomTextField(
                 width: MediaQuery.of(context).size.width * 0.48,
-                title: '모든 것이 객체로 이루어져 있다',
+                title: 'Everything is an Object',
                 text: 'Dart 언어는 모든 것이 객체로 이루어져 있습니다.\n\n'
                     '심지어 int, double, bool 등의 Primitive Type 역시 객체로 이루어져 있습니다.\n'
                     '따라서 Primitive 타입을 사용할 때에도 미리 정의된 메소드를 바로 이용할 수 있습니다.\n\n'

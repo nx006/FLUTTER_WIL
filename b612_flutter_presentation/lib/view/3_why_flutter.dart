@@ -77,7 +77,8 @@ class WhyFlutterPage extends StatelessWidget {
                           body: Text(
                             'Available on Android, iOS, Web, Windows, macOS, Linux, Rasberry Pi\n(Stable Release)\n\n'
                             '한 개의 코드 베이스로 다양한 플랫폼(특히 안드로이드와 iOS)을 동시에 지원할 수 있다.\n\n'
-                            'Flutter Engine(Skia, Impeller)가 각 플랫폼에 빌트인되어 화면을 그려낸다',
+                            'Flutter Engine(Skia, Impeller)가 각 플랫폼에 빌트인되어 화면을 그려낸다\n\n'
+                            '선언형 UI에 OOP를 기반으로 한 Widget으로 화면을 그리며, 간결하면서도 직관적으로 개발을 진행할 수 있다',
                             style: bodyTextStyle,
                           ),
                         ),
