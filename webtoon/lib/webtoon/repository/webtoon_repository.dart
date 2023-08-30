@@ -7,7 +7,7 @@ import 'package:webtoon/webtoon/model/webtoon_model.dart';
 
 part 'webtoon_repository.g.dart';
 
-final todayToonRepositoryProvider = Provider((ref) {
+final webtoonRepositoryProvider = Provider((ref) {
   final dio = ref.watch(dioProvider);
 
   return WebtoonRepository(dio, baseUrl: baseUrl);
