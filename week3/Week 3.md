@@ -57,7 +57,27 @@ void main() {
 }
 ```
 
-`Stream` 은 사실 잘 감이 안 오기는 한데, C++와 비교하면 코루틴(Coroutine)와 비슷한 기능같습니다.
+지속적으로 값이 변하게 될 때, `Stream` 객체를 사용할 수 있습니다.
+
+예를 들어 다음과 같이 사용할 수 있습니다.
+```dart
+Stream<List<Post>> getPostsByCommunityId(String communityId) {
+    try {
+      return _postsCollection
+          .where('communityId', isEqualTo: communityId)
+          .orderBy('postCreatedTime', descending: true)
+          .snapshots()
+          .map((snapshot) {
+        return snapshot.docs
+            .map((doc) => Post.fromSnapshot(doc))
+            .toList(growable: false);
+      });
+    } catch (e) {
+      logger.e('Error: $e');
+      return const Stream.empty();
+    }
+  }
+```
 
 ## Future / Async / Await를 사용하는 이유
 
