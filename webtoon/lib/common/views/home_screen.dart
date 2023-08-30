@@ -6,6 +6,8 @@ import 'package:webtoon/webtoon/model/webtoon_model.dart';
 import 'package:webtoon/webtoon/provider/webtoon_provider.dart';
 
 class HomeScreen extends ConsumerWidget {
+  static String get routeName => 'homeScreen';
+
   const HomeScreen({super.key});
 
   @override
