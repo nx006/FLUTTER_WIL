@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:b612_flutter_presentation/component/next_page_floating_button.dart';
 import 'package:b612_flutter_presentation/component/prev_page_floating_button.dart';
 import 'package:b612_flutter_presentation/const/font_styles.dart';

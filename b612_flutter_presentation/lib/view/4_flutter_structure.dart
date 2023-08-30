@@ -1,8 +1,10 @@
+
+// ignore_for_file: file_names
+
 import 'package:b612_flutter_presentation/component/custom_text_field_widget.dart';
 import 'package:b612_flutter_presentation/component/next_page_floating_button.dart';
 import 'package:b612_flutter_presentation/component/prev_page_floating_button.dart';
 import 'package:b612_flutter_presentation/layout/title_body_layout.dart';
-import 'package:b612_flutter_presentation/view/3_why_flutter.dart';
 import 'package:b612_flutter_presentation/view/5_flutter_engine.dart';
 import 'package:b612_flutter_presentation/view/cross_platform_page.dart';
 import 'package:flutter/material.dart';
